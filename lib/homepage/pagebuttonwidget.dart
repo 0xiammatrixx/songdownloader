@@ -24,13 +24,13 @@ class SelectPlatformButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(15)
       ),
       padding: EdgeInsets.all(8),
-      height: screenHeight * 0.15,
+      height: screenHeight * 0.12,
       width: screenWidth * 0.9,
       child: ElevatedButton(style: ButtonStyle(
         backgroundColor: WidgetStateProperty.all(color),
         alignment: Alignment.centerLeft,
         
-      ),onHover: (value) => color,
+      ),
         onPressed: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) => routePage));
         },

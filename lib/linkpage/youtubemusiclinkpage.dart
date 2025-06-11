@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:songdownloader/linkwidget/linkpagewidget.dart';
 
-class YoutubeMusicLinkPage extends StatefulWidget {
+class YoutubeMusicLinkPage extends StatelessWidget {
   const YoutubeMusicLinkPage({super.key});
 
   @override
-  State<YoutubeMusicLinkPage> createState() => _YoutubeMusicLinkPageState();
-}
-
-class _YoutubeMusicLinkPageState extends State<YoutubeMusicLinkPage> {
-  @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(),
+      body: LinkBarWidget(platform: 'YTMusic'),
+    );
   }
 }

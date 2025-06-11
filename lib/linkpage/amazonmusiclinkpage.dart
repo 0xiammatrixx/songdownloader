@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:songdownloader/linkwidget/linkpagewidget.dart';
 
-class AmazonLinkPage extends StatefulWidget {
+class AmazonLinkPage extends StatelessWidget {
   const AmazonLinkPage({super.key});
 
   @override
-  State<AmazonLinkPage> createState() => _AmazonLinkPageState();
-}
-
-class _AmazonLinkPageState extends State<AmazonLinkPage> {
-  @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(),
+      body: LinkBarWidget(platform: 'AmazonMusic'),
+    );
   }
 }

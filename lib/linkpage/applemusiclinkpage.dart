@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:songdownloader/linkwidget/linkpagewidget.dart';
 
-class AppleMusicLinkPage extends StatefulWidget {
+class AppleMusicLinkPage extends StatelessWidget {
   const AppleMusicLinkPage({super.key});
 
   @override
-  State<AppleMusicLinkPage> createState() => _AppleMusicLinkPageState();
-}
-
-class _AppleMusicLinkPageState extends State<AppleMusicLinkPage> {
-  @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(),
+      body: LinkBarWidget(platform: 'AppleMusic'),
+    );
   }
 }

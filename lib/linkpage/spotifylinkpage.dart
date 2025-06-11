@@ -1,21 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:songdownloader/linkpage/linkpagewidget.dart';
+import 'package:songdownloader/linkwidget/linkpagewidget.dart';
 
-class SpotifyLinkPage extends StatefulWidget {
+class SpotifyLinkPage extends StatelessWidget {
   const SpotifyLinkPage({super.key});
 
-  @override
-  State<SpotifyLinkPage> createState() => _SpotifyLinkPageState();
-}
-
-class _SpotifyLinkPageState extends State<SpotifyLinkPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Container(
-        child:LinkBarWidget(platform: 'Spotify'),
-      ),
+      body: LinkBarWidget(platform: 'Spotify'),
     );
   }
 }

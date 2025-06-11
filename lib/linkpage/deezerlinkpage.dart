@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:songdownloader/linkwidget/linkpagewidget.dart';
 
-class DeezerLinkPage extends StatefulWidget {
+class DeezerLinkPage extends StatelessWidget {
   const DeezerLinkPage({super.key});
 
   @override
-  State<DeezerLinkPage> createState() => _DeezerLinkPageState();
-}
-
-class _DeezerLinkPageState extends State<DeezerLinkPage> {
-  @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(),
+      body: LinkBarWidget(platform: 'Deezer'),
+    );
   }
 }
