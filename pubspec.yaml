@@ -35,7 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   youtube_explode_dart: ^2.4.2
-  google_mobile_ads: ^6.0.0
+  # google_mobile_ads: ^6.0.0
   permission_handler: ^12.0.0+1
   path_provider: ^2.1.5
   http: ^1.4.0
