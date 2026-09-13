@@ -1,16 +1,29 @@
 # songdownloader
 
-A new Flutter project.
+A Flutter app for downloading and converting audio from multiple sources —
+YouTube Music, Spotify, Amazon Music, Apple Music, and Deezer — with a
+built-in mp4-to-mp3 converter and direct YouTube video downloads.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Per-platform link handling for YouTube Music, Spotify, Amazon Music,
+  Apple Music, and Deezer
+- YouTube video download, independent of the music-link flow
+- MP4 → MP3 conversion
+- In-app playback of downloaded audio
 
-A few resources to get you started if this is your first Flutter project:
+## How it works
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Since most of these platforms don't expose a public download API, the app
+works against a companion backend ([Songdownloadbackend](https://github.com/0xiammatrixx/Songdownloadbackend))
+that resolves each platform's stream using `yt-dlp` with an authenticated
+cookie session, then serves the result back to the app for download or
+conversion.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Stack
+
+Flutter, Dart, `youtube_explode_dart`, `dio`, `audioplayers`
+
+## Status
+
+Personal project, functional for personal use.
